@@ -12,7 +12,7 @@ const createUser = async (userName, password) => {
     return response
 }
 
-describe ('3 api tests bookstore service (create User)', () => {
+describe ('3 api tests bookstore service (create_User)', () => {
     it ('Создание пользователя c ошибкой, логин уже используется', async () => {
         const res = await createUser ('KRIK', 'Vbvbkmrf1993!')
         const data = await res.json()
